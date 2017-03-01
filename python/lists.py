@@ -14,3 +14,25 @@ print one_to_ten
 
 one_to_ten.extend([12,13,14])
 print one_to_ten
+
+forward = []
+backwards = []
+
+values = (["a","b","c"])
+
+for i in values:
+   forward.append(i)
+   backwards.insert(0,i)
+
+
+print forward,backwards
+
+backwards.reverse()
+
+print forward,backwards
+
+countries = ["uk","usa","uk","uae"]
+print dir(countries)
+
+
+print countries.count("uk")
