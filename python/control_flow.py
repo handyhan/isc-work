@@ -9,4 +9,10 @@ count = 0
 while count < 3:
    item=mylist[count]
    print item, mylist.index(item)
-   count += 1 
+   count += 1
+
+x=1
+
+if 0.0: 
+   print " True" 
+
