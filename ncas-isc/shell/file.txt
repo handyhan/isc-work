@@ -1,0 +1,3 @@
+   694 ./acsoe/ozprof/aberystwyth/97/ab970304.b21
+   707 ./acsoe/ozprof/aberystwyth/98/ab981204.b21
+   762 ./acsoe/ozprof/aberystwyth/98/ab981104.b21
