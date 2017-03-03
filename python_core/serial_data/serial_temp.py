@@ -10,7 +10,11 @@ ser = serial.Serial(
     baudrate =9600,
 )
 
-sio = io.TextIOWrapper(
+
+#print help(io.TextIOWrapper)
+
+
+sio  = io.TextIOWrapper(
     io.BufferedRWPair(ser,ser,1),
     encoding = 'ascii',newline = '\r'
 )
@@ -18,7 +22,7 @@ sio = io.TextIOWrapper(
 with open(outfile, 'a') as f:
     while ser.isOpen():
         datastring = sio.readline()
-        f.write(datetime.utcnow().isoformat() + '\t' datastring + '\n')
+        f.write(datetime.utcnow().isoformat() + '\t' + datastring + '\n')
         f.flush()
 
 ser.close()    
